@@ -1003,6 +1003,7 @@ jobs:
           echo "CONFIG_USER_NS=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_DEVTMPFS=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_DEVTMPFS_MOUNT=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo 'CONFIG_LOCALVERSION="-DroidSpaces-BBG"' >> ./common/arch/arm64/configs/gki_defconfig
 
       - name: 配置内核名称
         working-directory: ${{ env.KERNEL_ROOT }}
